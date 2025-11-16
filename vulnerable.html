@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vulnerable Demo - XSS & eval()</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>VULNERABLE DEMO</h1>
+    <p>This page intentionally contains vulnerabilities for demonstration.</p>
+
+    <h2>1. Vulnerable XSS Example</h2>
+    <textarea id="vulnComment" placeholder="Enter comment (unsafe)..."></textarea>
+    <button id="btnVulnComment">Post Vulnerable Comment</button>
+    <div id="vulnOutput" class="output-box"></div>
+
+    <h2>2. Vulnerable eval() Example</h2>
+    <input id="vulnExpression" placeholder="Type JavaScript (unsafe eval)...">
+    <button id="btnVulnEval">Run eval() (Unsafe)</button>
+    <div id="vulnEvalResult" class="output-box"></div>
+
+    <script src="vulnerable.js"></script>
+
+</body>
+</html>
